@@ -1,4 +1,4 @@
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 FIREBASE_API_KEY = 'AIzaSyC9XW-C5-eIFN07xQ5orz_4mvTvt0P2N5s'
 FIREBASE_AUTH_DOMAIN = 'chatbot-1ba16.firebaseapp.com'
 FIREBASE_DATABASE_URL = 'https://chatbot-1ba16.firebaseio.com'
@@ -10,7 +10,7 @@ class Config(object):
     TESTING = False
 
 class DevelopmentConfig(Config):
-    SECRET_KEY = "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"
+    SECRET_KEY = "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"
 
 config = {
     'development': DevelopmentConfig,
