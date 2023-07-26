@@ -49,7 +49,7 @@ class Chatbox {
         textField.value = ''
         console.log(msg1);
 
-        const res = await fetch('https://chatbot-1zsx.onrender.com/chatbot', {
+        const res = await fetch('http://127.0.0.1:6969/chatbot', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
