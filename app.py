@@ -69,17 +69,20 @@ def register():
             return render_template('signup.html', message=message)
 
 openai.api_key = config.OPENAI_API_KEY
-def askGPT(text):
-    response = openai.Completion.create(
-        engine="davinci-instruct-beta-v3",
-        prompt=text,
-        temperature=0.6,
-        max_tokens=100,
-        top_p=1,
-        frequency_penalty=0,
-        presence_penalty=0
+def askGPT(text, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+
+    response = openai.ChatCompletion.create(
+
+    model=model,
+
+    messages=messages,
+
+    temperature=0,
+
     )
-    return response.choices[0].text
+
+    return response.choices[0].message["content"]
 
 
 @app.route("/chatbot",methods=["GET","POST"])
