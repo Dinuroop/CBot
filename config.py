@@ -1,4 +1,4 @@
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 FIREBASE_API_KEY = 'AIzaSyC9XW-C5-eIFN07xQ5orz_4mvTvt0P2N5s'
 FIREBASE_AUTH_DOMAIN = 'chatbot-1ba16.firebaseapp.com'
 FIREBASE_DATABASE_URL = 'https://chatbot-1ba16.firebaseio.com'
