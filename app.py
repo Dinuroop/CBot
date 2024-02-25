@@ -69,7 +69,7 @@ def register():
             return render_template('signup.html', message=message)
 
 openai.api_key = config.OPENAI_API_KEY
-def askGPT(text, model="gpt-3.5-turbo"):
+def askGPT(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
 
     response = openai.ChatCompletion.create(
